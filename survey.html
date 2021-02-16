@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+    <title>survey
+    </title>
+    <style>
+
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="index.html">Our Category</a>
+    <a href="service.html">Service Policy</a>
+    <a href="index.html">About Us</a>
+    <a href="registration.html">Register</a>
+  </div>   
+  <br>
+        Please rate our services
+        <ol type="1">
+            <li> -Needs Improvement </li>
+            <li>-Satisfactory</li>
+            <li>-Good</li>
+            <li>-Very Good</li>
+            <li>-Excellent</li>
+        </ol>
+        <form method="POST" id="survey" action="index.html">
+            <ol type="1"> 
+                <li><label >Durability:</label>
+                <input type="number" id="number1" min="1" max="5" required><br><br></li>
+                <li><label >Style/Design:</label>
+                    <input type="number" id="number2" min="1" max="5" required><br><br></li>
+                    <li><label >Eco Friendliness:</label>
+                        <input type="number" id="number3" min="1" max="5" required><br><br></li>
+                        <li><label >Customer Service:</label>
+                            <input type="number" id="number4" min="1" max="5" required><br><br></li>
+                            <li><label>Quality of Product:</label>
+                                <input type="number" id="number5" min="1" max="5" required><br><br></li>
+            </ol>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

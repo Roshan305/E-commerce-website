@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/register.css" rel="stylesheet" type="text/css">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="index.html">Our Category</a>
+  <a href="">Service Policy</a>
+  <a href="#about">About Us</a>
+  <a href="survey.html">Survey</a>
+</div>
+<br>
+<br>
+<br>
+
+<div id="error"></div>
+<form id="form" method="POST" action="index.html">
+  <div>
+    <label for="name">First Name</label>
+    <input id="fname" name="fname" type="text" required>
+  </div>
+  <br>
+  <div>
+    <label for="name">Last Name</label>
+    <input id="lname" name="lname" type="text" required>
+  </div>
+  <br>
+  <div>
+    <label for="number">Phone Number</label>
+    <input id="number" name="number" type="number" required>
+  </div>
+  <br>
+  <div>
+    <label for="name">Home Address</label>
+    <textarea id="address" rows="4" cols="20">  
+    </textarea>    <br>
+  </div>
+  <br>
+  <div>
+    <label for="name">Email</label>
+    <input id="email" name="email" type="email" required>
+  </div>
+  <br>
+  <div>
+    <label>Gender:</label>&nbsp;
+    <label>Male</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label>Female</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+  </div>
+  <br>
+  <div>
+    <labelfor="state">State:</label>
+    <select name="state" id="state">
+      <option value="nsw">New south wales</option>
+      <option value="vic">Victoria</option>
+      <option value="queen">Queensland</option>
+      <option value="tasmania">Tasmania</option>
+      <option value="wes">Western Australia</option>
+      <option value="sou">South Australia</option>
+    </select>
+    </div>
+    <br>
+    <div>  
+    <label >How did you know about us?</label>
+    <input type="radio" id="website" name="know" value="website">
+    <label  for="website" >Website</label>
+    <input type="radio" id="tv" name="know" value="tv">
+    <label for="tv" >TV</label>
+    <input type="radio" id="other" name="know" value="friends">
+    <labelfor="friends">Friends</label>
+    <br>
+    </div>
+    <br>
+    <div>
+    <label >Would you recommend us?</label>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <labelfor="yes" >Yes</label>
+    <input type="radio" id="no" name="recommend" value="no">
+    <labelfor="no">No</label>
+    <br> <br>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<script src="js/form.js"></script>
+</body>
+</html>
